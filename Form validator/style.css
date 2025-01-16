@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+:root {
+    --success-color:rgb(84, 237, 84);
+    --error-color:rgb(240, 40, 40);
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: 'Ubuntu';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.form { 
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-list {
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.form-list label {
+    display: block;
+    padding-bottom: 10px;
+}
+
+.form-list input {
+    border: 2px solid #f0f0f0;
+    display: block;
+    width: 100%;
+    padding: 6px;
+    font-size: 0.8rem;
+}
+ 
+.form-list input:focus{
+   outline: 0;
+   border-color: grey;
+}
+
+.form-list.success input{
+   border-color: var(--success-color);
+}
+
+/*so if*/
+
+.form-list.error input{
+   border-color: var(--error-color);
+}
+
+.form-list small {
+   color: var(--error-color);
+   visibility: hidden;
+   bottom: 0;
+   left: 0;
+}
+
+/*then*/
+
+.form-list.error small {
+    visibility: visible;
+}
+
+.form button {
+   cursor: pointer;
+   background: rgb(47, 96, 211);
+   border: 2px solid  rgb(47, 96, 211);
+   color: white;
+   display: block;
+   font-size: 1rem;
+   padding:5px;
+   width: 100%;
+   margin-top: 10px;
+}

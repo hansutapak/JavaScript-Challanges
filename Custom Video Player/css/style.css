@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Outfit", sans-serif;
+    background: rgb(91, 91, 91);
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+.screen {
+    cursor: pointer;
+    width: 60%;
+    aspect-ratio: auto;
+    background-color: black !important;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.controls {
+    background: rgb(49, 49, 49);
+    width: 60%;
+    color: whitesmoke;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.controls .btn {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+.controls .fa-play {
+    color: rgb(63, 196, 63);
+}
+
+.controls .fa-stop {
+    color: rgb(227, 41, 41);
+}
+
+.controls .fa-pause {
+    color: white;
+}
+
+.controls .timestamp {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+
+.btn:focus {
+    outline: 0;
+}
+
+
+
+/* media-query */
+
+@media (max-width: 700px) {
+    .screen,
+    .controls {
+        width: 90%;
+    }
+
+}
