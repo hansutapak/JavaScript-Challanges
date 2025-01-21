@@ -54,7 +54,10 @@
 }
 
 .work-item {
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
+  justify-content: center;
   padding: 15px;
   border-radius: 60px;
   text-align: left;
@@ -93,6 +96,16 @@
 
 .work-para {
   color: #666;
+}
+
+.work-para .emoji {
+  display: inline-block;
+  transform: scale(0);
+  transition: transform 0.2s ease;
+}
+
+.work-link:hover .emoji {
+  transform: scale(1);
 }
 
 /* footer */
